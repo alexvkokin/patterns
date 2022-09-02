@@ -14,5 +14,7 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require-dev": {
+        "vimeo/psalm": "^4.27"
+    }
 }

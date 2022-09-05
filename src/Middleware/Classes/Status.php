@@ -1,7 +1,8 @@
 <?php
 namespace Alexvkokin\Patterns\Middleware\Classes;
 
-enum Status
+enum Status: string
 {
-    case OK;
+    case OK = 'OK';
+    case BAD_REQUEST = 'BAD_REQUEST';
 }

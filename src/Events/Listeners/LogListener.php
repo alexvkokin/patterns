@@ -6,10 +6,10 @@ namespace Alexvkokin\Patterns\Events\Listeners;
 use Alexvkokin\Patterns\Events\Events\Event;
 use Monolog\Logger;
 
-class LogListener implements ListenerInterface
+readonly class LogListener implements ListenerInterface
 {
     public function __construct(
-        public readonly Logger $logger,
+        public Logger $logger,
     ) {
     }
 

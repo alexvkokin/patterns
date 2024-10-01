@@ -2,6 +2,8 @@
 
 use Alexvkokin\Patterns\Events\BusinessLogic\StaffServices;
 use Alexvkokin\Patterns\Events\Dispatchers\SimpleDispatch;
+use Alexvkokin\Patterns\Events\Events\CreateUserEvent;
+use Alexvkokin\Patterns\Events\Events\UpdateUserEvent;
 use Alexvkokin\Patterns\Events\Listeners\LogListener;
 use Alexvkokin\Patterns\Events\Listeners\NotifyListener;
 use Monolog\Handler\StreamHandler;
@@ -13,11 +15,11 @@ $logger = new Logger('main', [new StreamHandler('php://stdout')]);
 
 $dispatcher = new SimpleDispatch(
     listeners: [
-        \Alexvkokin\Patterns\Events\Events\CreateUserEvent::class => [
+        CreateUserEvent::class => [
             new LogListener($logger),
             new NotifyListener(),
         ],
-        \Alexvkokin\Patterns\Events\Events\UpdateUserEvent::class => [
+        UpdateUserEvent::class => [
             new LogListener($logger),
         ],
     ]

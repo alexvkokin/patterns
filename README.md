@@ -5,4 +5,4 @@
 Они скорее являются методиками решения определенных проблем в определенных ситуациях.
 
 - [Middleware](./src/Middleware/README.md)
-- [Event Dispatcher](./src/Events/README.md)
+- [Event Dispatcher](./src/Behavioral/Events/README.md)

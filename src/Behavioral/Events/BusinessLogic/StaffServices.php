@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Alexvkokin\Patterns\Events\BusinessLogic;
+namespace Alexvkokin\Patterns\Behavioral\Events\BusinessLogic;
 
-use Alexvkokin\Patterns\Events\Dispatchers\SimpleDispatch;
-use Alexvkokin\Patterns\Events\Events\CreateUserEvent;
-use Alexvkokin\Patterns\Events\Events\UpdateUserEvent;
+use Alexvkokin\Patterns\Behavioral\Events\Dispatchers\SimpleDispatch;
+use Alexvkokin\Patterns\Behavioral\Events\Events\CreateUserEvent;
+use Alexvkokin\Patterns\Behavioral\Events\Events\UpdateUserEvent;
 
 class StaffServices
 {

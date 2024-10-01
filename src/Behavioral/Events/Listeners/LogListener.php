@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Alexvkokin\Patterns\Events\Listeners;
+namespace Alexvkokin\Patterns\Behavioral\Events\Listeners;
 
-use Alexvkokin\Patterns\Events\Events\Event;
+use Alexvkokin\Patterns\Behavioral\Events\Events\Event;
 use Monolog\Logger;
 
 readonly class LogListener implements ListenerInterface

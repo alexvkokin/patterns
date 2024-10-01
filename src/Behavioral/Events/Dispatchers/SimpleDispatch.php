@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Alexvkokin\Patterns\Events\Dispatchers;
+namespace Alexvkokin\Patterns\Behavioral\Events\Dispatchers;
 
-use Alexvkokin\Patterns\Events\Events\Event;
+use Alexvkokin\Patterns\Behavioral\Events\Events\Event;
 
 final class SimpleDispatch implements DispatcherInterface
 {

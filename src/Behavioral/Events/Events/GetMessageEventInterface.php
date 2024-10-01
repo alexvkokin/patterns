@@ -1,6 +1,6 @@
 <?php
 
-namespace Alexvkokin\Patterns\Events\Events;
+namespace Alexvkokin\Patterns\Behavioral\Events\Events;
 
 interface GetMessageEventInterface
 {

@@ -9,14 +9,12 @@ final class GenericContainer implements Container
 
     private array $singletons = [];
 
-    public function register(string $className, callable $definition): Container
+    public function register(string $className, callable $definition): void
     {
         $this->definitions[$className] = $definition;
-
-        return $this;
     }
 
-    public function singleton(string $className, callable $definition): Container
+    public function singleton(string $className, callable $definition): void
     {
         $this->definitions[$className] = function () use ($className, $definition) {
 
@@ -26,8 +24,6 @@ final class GenericContainer implements Container
 
             return $instance;
         };
-
-        return $this;
     }
 
     public function get(string $className): object
@@ -36,6 +32,7 @@ final class GenericContainer implements Container
             return $instance;
         }
 
+        /** @var callable $definition */
         $definition = $this->definitions[$className] ?? $this->autowire(...);
 
         return $definition($className);

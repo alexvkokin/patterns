@@ -7,3 +7,4 @@
 - [Middleware](./src/Middleware/README.md)
 - [Event Dispatcher](./src/Behavioral/Events/README.md)
 - [DI Container](./src/DiContainer/README.md)
+- [Структурные паттерны](./src/Structured/README.md)

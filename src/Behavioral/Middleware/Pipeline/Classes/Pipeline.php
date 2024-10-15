@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Alexvkokin\Patterns\Middleware\Classes;
+namespace Alexvkokin\Patterns\Behavioral\Middleware\Pipeline\Classes;
 
-use Alexvkokin\Patterns\Middleware\Interfaces\HandlerInterface;
-use Alexvkokin\Patterns\Middleware\Interfaces\MiddlewareInterface;
+use Alexvkokin\Patterns\Behavioral\Middleware\Pipeline\Interfaces\HandlerInterface;
+use Alexvkokin\Patterns\Behavioral\Middleware\Pipeline\Interfaces\MiddlewareInterface;
 
 final class Pipeline
 {

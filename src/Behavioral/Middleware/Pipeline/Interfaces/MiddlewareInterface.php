@@ -1,9 +1,9 @@
 <?php
 
-namespace Alexvkokin\Patterns\Middleware\Interfaces;
+namespace Alexvkokin\Patterns\Behavioral\Middleware\Pipeline\Interfaces;
 
-use Alexvkokin\Patterns\Middleware\Classes\Request;
-use Alexvkokin\Patterns\Middleware\Classes\Response;
+use Alexvkokin\Patterns\Behavioral\Middleware\Pipeline\Classes\Request;
+use Alexvkokin\Patterns\Behavioral\Middleware\Pipeline\Classes\Response;
 
 interface MiddlewareInterface
 {

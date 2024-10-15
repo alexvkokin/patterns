@@ -1,5 +1,5 @@
 <?php
-namespace Alexvkokin\Patterns\Middleware\Classes;
+namespace Alexvkokin\Patterns\Behavioral\Middleware\Pipeline\Classes;
 
 enum Status: string
 {

@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Alexvkokin\Patterns\Middleware\Middlewares;
+namespace Alexvkokin\Patterns\Behavioral\Middleware\Pipeline\Middlewares;
 
-use Alexvkokin\Patterns\Middleware\Classes\Request;
-use Alexvkokin\Patterns\Middleware\Classes\Response;
-use Alexvkokin\Patterns\Middleware\Interfaces\MiddlewareInterface;
+use Alexvkokin\Patterns\Behavioral\Middleware\Pipeline\Classes\Request;
+use Alexvkokin\Patterns\Behavioral\Middleware\Pipeline\Classes\Response;
+use Alexvkokin\Patterns\Behavioral\Middleware\Pipeline\Interfaces\MiddlewareInterface;
 use Psr\Log\LoggerInterface;
 
 final class Logging implements MiddlewareInterface

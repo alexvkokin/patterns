@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Alexvkokin\Patterns\Middleware\Classes;
+namespace Alexvkokin\Patterns\Behavioral\Middleware\Pipeline\Classes;
 
 /**
  * @psalm-immutalbe

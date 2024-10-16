@@ -17,17 +17,11 @@ final class Logging implements MiddlewareInterface
 
     public function handle(Request $request, callable $next): Response
     {
-        $this->logger->info('Request.', [
-            'requestId' => $request->requestId,
-            'request' => $request,
-        ]);
+        $this->logger->info('Request.', [$request]);
 
         $response = $next($request);
 
-        $this->logger->info('Application responded.', [
-            'requestId' => $request->requestId,
-            'response' => $response,
-        ]);
+        $this->logger->info('Application responded.', [$response]);
 
         return $response;
     }

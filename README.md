@@ -8,3 +8,5 @@
 - [DI Container](./src/DiContainer/README.md)
 - [Структурные паттерны](./src/Structured/README.md)
 - [Поведенческие паттерны](./src/Behavioral/README.md)
+
+- [Generics](./src/Generics/README.md)

@@ -20,6 +20,6 @@
         "monolog/monolog": "^3.2"
     },
     "require-dev": {
-        "vimeo/psalm": "^4.27"
+        "vimeo/psalm": "^5.13"
     }
 }

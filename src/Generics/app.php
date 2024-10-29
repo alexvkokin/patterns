@@ -5,6 +5,7 @@ use Alexvkokin\Patterns\Generics\Collection;
 use Alexvkokin\Patterns\Generics\Factories\ElectricGuitarFactory;
 use Alexvkokin\Patterns\Generics\Instruments\FlyingVGuitar;
 use Alexvkokin\Patterns\Generics\Instruments\ExpensiveViolin;
+use Alexvkokin\Patterns\Generics\HashSet;
 
 require_once __DIR__ . "/../../vendor/autoload.php";
 
@@ -29,8 +30,14 @@ $strings->add(1); // psalm: InvalidArgument: expects string, but 1 provided
 $factory = new ElectricGuitarFactory(FlyingVGuitar::class);
 $guitar = $factory->make();
 
-$factory2 = new ElectricGuitarFactory(ExpensiveViolin::class);
+$factory2 = new ElectricGuitarFactory(ExpensiveViolin::class); // psalm: InvalidArgument: Argument 1
 $violin = $factory2->make();
-
 var_dump($guitar, $violin);
+
+/** @var HashSet<int, string> $hash */
+$hash = new HashSet();
+$hash->set(0, 'php');
+$hash->set(1, 'js');
+$hash->set('first', 'hello'); // psalm: InvalidArgument: Argument 1 expects int, but 'first' provided
+
 
